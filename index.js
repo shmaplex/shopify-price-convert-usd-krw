@@ -34,7 +34,10 @@ const generateExportFilename = () => {
     second: "2-digit",
     hour12: false,
   };
-  const timestamp = now.toLocaleString("en-US", options).replace(/[/:]/g, "-");
+  const timestamp = now
+    .toLocaleString("en-US", options)
+    .replace(/[/,:\s]/g, "-")
+    .replace(/--/g, "-");
   return `output_${timestamp}.csv`;
 };
 
