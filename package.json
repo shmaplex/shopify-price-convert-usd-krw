@@ -1,7 +1,9 @@
 {
   "dependencies": {
     "csv-parser": "^3.0.0",
-    "fast-csv": "^4.3.6"
+    "csv-writer": "^1.6.0",
+    "fast-csv": "^4.3.6",
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
     "prettier": "^3.0.0"
